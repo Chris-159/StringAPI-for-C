@@ -1,0 +1,21 @@
+1.) I need to refactor the return types of the higher ranking functions (at the String objects).
+    I think I will take the product of the functions return value with a predefined one, 
+    so these values will be ranked in a hierarchy system:
+
+CURRENT_FUNCTION: ret
+    FUNCTION_1: ret * 10
+        FUNCTION_2: ret * 100
+            ...
+                .
+                .
+                .
+                FUNCTION_n: ret * (n * 10)
+
+    Need to take into account, that after this the return value will be much higher or lower. 
+    Currently the type is /char/ which only has the range of -128 to 127.
+    This won't be enough in the case, where there are at least 3 functions.
+    In this case the ouptut will be over 1000 or under -1000.
+    I want to change the /char/ to /short/, but I have a lurking suspicion it won't be enough...
+
+2.) There is a need to eliminate the deprecated string.h functions, because these won't support bounds checking.
+    Search alternatives!

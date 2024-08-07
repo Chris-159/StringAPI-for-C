@@ -1,0 +1,12 @@
+#The git stuff#
+.git
+
+#VSCode folder#
+.vscode
+
+#Test files#
+main*
+*.exe
+
+#Note to self#
+todo_hun.txt
